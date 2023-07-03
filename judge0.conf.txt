@@ -1,0 +1,106 @@
+################################################################################
+# Judge0 Server Configuration
+################################################################################
+JUDGE0_TELEMETRY_ENABLE=false
+RESTART_MAX_TRIES=5
+MAINTENANCE_MODE=false
+MAINTENANCE_MESSAGE=Judge0 is currently in maintenance.
+ENABLE_WAIT_RESULT=false
+ENABLE_COMPILER_OPTIONS=false
+ENABLE_COMMAND_LINE_ARGUMENTS=false
+ENABLE_SUBMISSION_DELETE=false
+ENABLE_BATCHED_SUBMISSIONS=false
+MAX_SUBMISSION_BATCH_SIZE=10
+ENABLE_CALLBACKS=false
+CALLBACKS_MAX_TRIES=2
+CALLBACKS_TIMEOUT=3
+ENABLE_ADDITIONAL_FILES=false
+SUBMISSION_CACHE_DURATION=0
+USE_DOCS_AS_HOMEPAGE=false
+
+
+################################################################################
+# Judge0 Workers Configuration
+################################################################################
+INTERVAL=0.5
+COUNT=1
+MAX_QUEUE_SIZE=10
+
+
+################################################################################
+# Judge0 Server Access Configuration
+################################################################################
+ALLOW_ORIGIN=
+DISALLOW_ORIGIN=
+ALLOW_IP=
+DISALLOW_IP=
+
+
+################################################################################
+# Judge0 Authentication Configuration
+################################################################################
+AUTHN_HEADER=
+AUTHN_TOKEN=
+
+
+################################################################################
+# Judge0 Authorization Configuration
+################################################################################
+AUTHZ_HEADER=
+AUTHZ_TOKEN=
+
+
+################################################################################
+# Redis Configuration
+################################################################################
+REDIS_HOST=redis
+REDIS_PORT=6379
+REDIS_PASSWORD=YourPasswordHere1234
+
+
+################################################################################
+# PostgreSQL Configuration
+################################################################################
+POSTGRES_HOST=db
+POSTGRES_PORT=5432
+POSTGRES_DB=judge0
+POSTGRES_USER=judge0
+POSTGRES_PASSWORD=YourPasswordHere1234
+
+
+################################################################################
+# Submission Configuration
+################################################################################
+CPU_TIME_LIMIT=2
+MAX_CPU_TIME_LIMIT=5
+CPU_EXTRA_TIME=0.5
+MAX_CPU_EXTRA_TIME=2
+WALL_TIME_LIMIT=5
+MAX_WALL_TIME_LIMIT=10
+MEMORY_LIMIT=256000
+MAX_MEMORY_LIMIT=512000
+STACK_LIMIT=32000
+MAX_STACK_LIMIT=64000
+MAX_PROCESSES_AND_OR_THREADS=30
+MAX_MAX_PROCESSES_AND_OR_THREADS=60
+ENABLE_PER_PROCESS_AND_THREAD_TIME_LIMIT=false
+ALLOW_ENABLE_PER_PROCESS_AND_THREAD_TIME_LIMIT=false
+ENABLE_PER_PROCESS_AND_THREAD_MEMORY_LIMIT=false
+ALLOW_ENABLE_PER_PROCESS_AND_THREAD_MEMORY_LIMIT=false
+MAX_FILE_SIZE=512
+MAX_MAX_FILE_SIZE=2048
+NUMBER_OF_RUNS=1
+MAX_NUMBER_OF_RUNS=5
+REDIRECT_STDERR_TO_STDOUT=false
+MAX_EXTRACT_SIZE=5120
+ALLOW_ENABLE_NETWORK=false
+ENABLE_NETWORK=false
+
+
+################################################################################
+# Rails Configuration
+################################################################################
+RAILS_ENV=production
+RAILS_MAX_THREADS=
+RAILS_SERVER_PROCESSES=1
+SECRET_KEY_BASE=
